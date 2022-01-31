@@ -1,0 +1,19 @@
+{
+  "name": "test-task-dynamic-key",
+  "version": "1.0.0",
+  "description": "Test task of dynamic key",
+  "main": "test.js",
+  "scripts": {
+    "start": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eduard-Konovka/test-task-dynamic-key.git"
+  },
+  "author": "Eduard Konovka <ed098ua@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eduard-Konovka/test-task-dynamic-key/issues"
+  },
+  "homepage": "https://github.com/Eduard-Konovka/test-task-dynamic-key#test"
+}
