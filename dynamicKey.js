@@ -56,3 +56,42 @@ for (let i = 1; i <= 10; i += 1) {
 }
 
 console.log(arr);
+
+// ----------------------------------------
+const array = [
+  {
+    name: "apple",
+    amount: 5,
+  },
+  {
+    name: "banana",
+    amount: 2,
+  },
+  {
+    name: "apple",
+    amount: 7,
+  },
+  {
+    name: "banana",
+    amount: 1000,
+  },
+];
+
+/* ---------------------------------------
+Ожидаемый результат:
+[
+  { name: "apple", amount: 12 },
+  { name: "banana", amount: 1002 },
+];
+--------------------------------------- */
+
+const fruits = array.reduce((acc, { name, amount }) => {
+  const fruit = acc.find((el) => el.name === name);
+  if (fruit) {
+    fruit.amount += amount;
+    return acc;
+  }
+  return [...acc, { name, amount }];
+}, []);
+
+console.log(fruits);
